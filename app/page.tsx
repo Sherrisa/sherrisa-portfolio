@@ -44,7 +44,7 @@ export default function Home() {
             href="/educator"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="aspect-[4/3] bg-neutral-100" />
+            <div className="aspect-square bg-neutral-100" />
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
@@ -62,7 +62,7 @@ export default function Home() {
             href="/designer"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="aspect-[4/3] bg-neutral-100" />
+            <div className="aspect-square bg-neutral-100" />
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
@@ -75,10 +75,17 @@ export default function Home() {
 
           {/* Photographer */}
           <Link
-            href="/photographer"
+            href="/photographer/choisi-copenhagen"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="aspect-[4/3] bg-neutral-100" />
+            <div className="relative aspect-square overflow-hidden bg-neutral-100">
+              <Image
+                src="/images/choisi/2026-09-23_Copenhagen-63.jpg"
+                alt="Choisi Copenhagen photography project"
+                fill
+                className="object-cover"
+              />
+            </div>
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
@@ -98,7 +105,6 @@ export default function Home() {
           stories that help people understand, connect, and create.
         </p>
       </section>
-      
     </main>
   );
 }
