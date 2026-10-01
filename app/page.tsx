@@ -98,7 +98,6 @@ export default function Home() {
           stories that help people understand, connect, and create.
         </p>
       </section>
-
       
     </main>
   );
