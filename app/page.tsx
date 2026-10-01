@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { oswald } from "./fonts";
 
 export default function Home() {
@@ -24,6 +25,81 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* Latest Work */}
+      <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+        <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
+          <div className="h-px flex-1 bg-neutral-300" />
+
+          <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
+            Some of My Latest Work
+          </h2>
+
+          <div className="h-px flex-1 bg-neutral-300" />
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          {/* Educator */}
+          <Link
+            href="/educator"
+            className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div className="aspect-[4/3] bg-neutral-100" />
+
+            <div className="px-6 py-6">
+              <h3 className="text-2xl font-normal text-neutral-700">
+                Intro to Next.js
+              </h3>
+
+              <p className="mt-1 text-lg text-neutral-500">
+                Instructional Design
+              </p>
+            </div>
+          </Link>
+
+          {/* Designer */}
+          <Link
+            href="/designer"
+            className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div className="aspect-[4/3] bg-neutral-100" />
+
+            <div className="px-6 py-6">
+              <h3 className="text-2xl font-normal text-neutral-700">
+                Coddiwomple Art
+              </h3>
+
+              <p className="mt-1 text-lg text-neutral-500">Branding & UX</p>
+            </div>
+          </Link>
+
+          {/* Photographer */}
+          <Link
+            href="/photographer"
+            className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
+          >
+            <div className="aspect-[4/3] bg-neutral-100" />
+
+            <div className="px-6 py-6">
+              <h3 className="text-2xl font-normal text-neutral-700">
+                Choisi Copenhagen
+              </h3>
+
+              <p className="mt-1 text-lg text-neutral-500">Photography</p>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* Positioning */}
+      <section className="mx-auto w-full max-w-4xl px-6 py-20 sm:py-24">
+        <p className="text-2xl font-light leading-relaxed text-neutral-600 sm:text-3xl">
+          I design learning experiences, visual identities, and photographic
+          stories that help people understand, connect, and create.
+        </p>
+      </section>
+
+      
     </main>
   );
 }
