@@ -1,4 +1,4 @@
-import { Oswald, Urbanist } from "next/font/google";
+import { MuseoModerno, Oswald, Urbanist } from "next/font/google";
 
 export const urbanist = Urbanist({
   subsets: ["latin"],
@@ -6,6 +6,11 @@ export const urbanist = Urbanist({
 });
 
 export const oswald = Oswald({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const museoModerno = MuseoModerno({
   subsets: ["latin"],
   display: "swap",
 });

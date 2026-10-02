@@ -28,6 +28,7 @@ export default function Home() {
 
       {/* Latest Work */}
       <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+        {/* Section heading */}
         <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
           <div className="h-px flex-1 bg-neutral-300" />
 
@@ -38,13 +39,16 @@ export default function Home() {
           <div className="h-px flex-1 bg-neutral-300" />
         </div>
 
+        {/* Project cards */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Educator */}
           <Link
             href="/educator"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="aspect-square bg-neutral-100" />
+            <div className="aspect-square bg-neutral-100 p-6">
+              <div className="h-full w-full rounded-lg bg-white" />
+            </div>
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
@@ -59,17 +63,28 @@ export default function Home() {
 
           {/* Designer */}
           <Link
-            href="/designer"
+            href="/designer/coddiwomple-art"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="aspect-square bg-neutral-100" />
+            <div className="aspect-square bg-neutral-100 p-6">
+              <div className="relative h-full w-full overflow-hidden rounded-lg bg-white">
+                <Image
+                  src="/images/coddiwomple/scooter.png"
+                  alt="Coddiwomple Art scooter illustration"
+                  fill
+                  className="object-contain p-3"
+                />
+              </div>
+            </div>
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
                 Coddiwomple Art
               </h3>
 
-              <p className="mt-1 text-lg text-neutral-500">Branding & UX</p>
+              <p className="mt-1 text-lg text-neutral-500">
+                Branding & UX
+              </p>
             </div>
           </Link>
 
@@ -78,13 +93,15 @@ export default function Home() {
             href="/photographer/choisi-copenhagen"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
-            <div className="relative aspect-square overflow-hidden bg-neutral-100">
-              <Image
-                src="/images/choisi/2026-09-23_Copenhagen-63.jpg"
-                alt="Choisi Copenhagen photography project"
-                fill
-                className="object-cover"
-              />
+            <div className="aspect-square bg-neutral-100 p-6">
+              <div className="relative h-full w-full overflow-hidden rounded-lg">
+                <Image
+                  src="/images/choisi/2026-09-23_Copenhagen-63.jpg"
+                  alt="Choisi Copenhagen photography project"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             <div className="px-6 py-6">
@@ -92,7 +109,9 @@ export default function Home() {
                 Choisi Copenhagen
               </h3>
 
-              <p className="mt-1 text-lg text-neutral-500">Photography</p>
+              <p className="mt-1 text-lg text-neutral-500">
+                Photography
+              </p>
             </div>
           </Link>
         </div>
