@@ -149,7 +149,7 @@ export default function CoddiwompleArtPage() {
 
           <div className="mt-8 overflow-hidden rounded-2xl bg-neutral-50">
             <Image
-              src="/images/coddiwomple/coddiwomple-palette-cropped.jpeg"
+              src="/images/coddiwomple/coddiwomple-palette.jpeg"
               alt="Coddiwomple Art color palette"
               width={1600}
               height={900}
@@ -286,100 +286,101 @@ export default function CoddiwompleArtPage() {
       </section>
 
       {/* Website & UX */}
-<section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
-  {/* Section heading */}
-  <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
-    <div className="h-px flex-1 bg-neutral-300" />
+      <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+        {/* Section heading */}
+        <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
+          <div className="h-px flex-1 bg-neutral-300" />
 
-    <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
-      Website & UX
-    </h2>
+          <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
+            Website & UX
+          </h2>
 
-    <div className="h-px flex-1 bg-neutral-300" />
-  </div>
-
-  {/* UX story */}
-  <div className="mx-auto max-w-4xl">
-    <p className="text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
-      One of the clearest UX decisions came from the course call-to-action. I
-      started with a conventional button, but it felt too much like a generic
-      software interface for a brand built around creativity, exploration, and
-      discovery.
-    </p>
-
-    <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
-      I replaced the button with a stronger berry-colored text link and used
-      motion as the visual cue instead. The interaction evolved into a wandering
-      dot following a curved path beneath “Explore the courses →,” creating a
-      more distinctive invitation to move deeper into the site.
-    </p>
-  </div>
-
-  {/* Live interaction example */}
-  <div className="mx-auto mt-12 max-w-5xl">
-    <div className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-2xl bg-white px-6 py-14 shadow-[0_2px_12px_rgba(0,0,0,0.08)] sm:min-h-[360px] sm:px-10">
-      <div className="w-full max-w-2xl">
-        {/* CTA */}
-        <div className="flex items-center justify-center gap-3 sm:gap-4">
-          <p
-            className={`${jost.className} text-2xl font-bold text-[#A2337E] sm:text-3xl lg:text-4xl`}
-          >
-            Explore the courses
-          </p>
-
-          <span
-            className={`${jost.className} text-2xl font-normal text-[#A2337E] sm:text-3xl lg:text-4xl`}
-            aria-hidden="true"
-          >
-            →
-          </span>
+          <div className="h-px flex-1 bg-neutral-300" />
         </div>
 
-        {/* Animated journey */}
-        <div className="mx-auto mt-5 w-full max-w-md sm:mt-7">
-          <svg
-            viewBox="0 0 500 105"
-            className="h-auto w-full overflow-visible"
-            role="img"
-            aria-label="Animated berry-colored dot moving along a curved path beneath the course link"
-          >
-            {/* Invisible motion path */}
-            <path
-              id="course-dot-path"
-              d="M 80 32
+        {/* UX story */}
+        <div className="mx-auto max-w-4xl">
+          <p className="text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
+            One of the clearest UX decisions came from the course
+            call-to-action. I started with a conventional button, but it felt
+            too much like a generic software interface for a brand built around
+            creativity, exploration, and discovery.
+          </p>
+
+          <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
+            I replaced the button with a stronger berry-colored text link and
+            used motion as the visual cue instead. The interaction evolved into
+            a wandering dot following a curved path beneath “Explore the courses
+            →,” creating a more distinctive invitation to move deeper into the
+            site.
+          </p>
+        </div>
+
+        {/* Live interaction example */}
+        <div className="mx-auto mt-12 max-w-5xl">
+          <div className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-2xl bg-white px-6 py-14 shadow-[0_2px_12px_rgba(0,0,0,0.08)] sm:min-h-[360px] sm:px-10">
+            <div className="w-full max-w-2xl">
+              {/* CTA */}
+              <div className="flex items-center justify-center gap-3 sm:gap-4">
+                <p
+                  className={`${jost.className} text-2xl font-bold text-[#A2337E] sm:text-3xl lg:text-4xl`}
+                >
+                  Explore the courses
+                </p>
+
+                <span
+                  className={`${jost.className} text-2xl font-normal text-[#A2337E] sm:text-3xl lg:text-4xl`}
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+              </div>
+
+              {/* Animated journey */}
+              <div className="mx-auto mt-5 w-full max-w-md sm:mt-7">
+                <svg
+                  viewBox="0 0 500 105"
+                  className="h-auto w-full overflow-visible"
+                  role="img"
+                  aria-label="Animated berry-colored dot moving along a curved path beneath the course link"
+                >
+                  {/* Invisible motion path */}
+                  <path
+                    id="course-dot-path"
+                    d="M 80 32
                  C 135 32, 155 73, 215 73
                  C 285 73, 305 40, 365 40
                  C 395 40, 415 54, 430 61"
-              fill="none"
-              stroke="none"
-            />
+                    fill="none"
+                    stroke="none"
+                  />
 
-            {/* Animated berry dot */}
-            <circle r="11" fill="#A2337E">
-              <animateMotion
-                dur="5s"
-                repeatCount="indefinite"
-                keyPoints="0;1;0"
-                keyTimes="0;0.5;1"
-                calcMode="spline"
-                keySplines="0.4 0 0.2 1;0.4 0 0.2 1"
-              >
-                <mpath href="#course-dot-path" />
-              </animateMotion>
-            </circle>
-          </svg>
+                  {/* Animated berry dot */}
+                  <circle r="11" fill="#A2337E">
+                    <animateMotion
+                      dur="5s"
+                      repeatCount="indefinite"
+                      keyPoints="0;1;0"
+                      keyTimes="0;0.5;1"
+                      calcMode="spline"
+                      keySplines="0.4 0 0.2 1;0.4 0 0.2 1"
+                    >
+                      <mpath href="#course-dot-path" />
+                    </animateMotion>
+                  </circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature caption */}
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-neutral-500 sm:text-base">
+            The final interaction uses restrained motion to attract attention
+            without overpowering the content, reinforcing the brand’s idea of
+            purposeful exploration.
+          </p>
         </div>
-      </div>
-    </div>
-
-    {/* Feature caption */}
-    <p className="mt-5 max-w-3xl text-sm leading-relaxed text-neutral-500 sm:text-base">
-      The final interaction uses restrained motion to attract attention without
-      overpowering the content, reinforcing the brand’s idea of purposeful
-      exploration.
-    </p>
-  </div>
-</section>
+      </section>
       {/* Reflection */}
       <section className="mx-auto w-full max-w-4xl px-6 py-20 sm:py-24">
         <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-neutral-400">
