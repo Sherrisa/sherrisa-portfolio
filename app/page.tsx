@@ -40,14 +40,23 @@ export default function Home() {
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
           {/* Educator */}
+          {/*
           <Link
             href="/educator"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
             <div className="aspect-square bg-neutral-100 p-6">
-              <div className="h-full w-full rounded-lg bg-white" />
+              <div className="relative h-full w-full overflow-hidden rounded-lg">
+                <Image
+                  src="/images/intro-nextjs.png"
+                  alt="Intro to Next.js instructional design project"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             <div className="px-6 py-6">
@@ -60,6 +69,7 @@ export default function Home() {
               </p>
             </div>
           </Link>
+          */}
 
           {/* Designer */}
           <Link
@@ -82,9 +92,7 @@ export default function Home() {
                 Coddiwomple Art
               </h3>
 
-              <p className="mt-1 text-lg text-neutral-500">
-                Branding & UX
-              </p>
+              <p className="mt-1 text-lg text-neutral-500">Branding & UX</p>
             </div>
           </Link>
 
@@ -109,9 +117,7 @@ export default function Home() {
                 Choisi Copenhagen
               </h3>
 
-              <p className="mt-1 text-lg text-neutral-500">
-                Photography
-              </p>
+              <p className="mt-1 text-lg text-neutral-500">Photography</p>
             </div>
           </Link>
         </div>

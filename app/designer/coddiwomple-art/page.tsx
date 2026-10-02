@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { museoModerno, oswald } from "../../fonts";
+import { jost, museoModerno, oswald } from "../../fonts";
 
 export default function CoddiwompleArtPage() {
   return (
@@ -29,9 +29,69 @@ export default function CoddiwompleArtPage() {
         </p>
       </section>
 
-      {/* Hero placeholder */}
-      <section className="mx-auto w-full max-w-6xl px-6 pb-20">
-        <div className="aspect-[16/9] rounded-2xl bg-neutral-100" />
+      {/* Hero — Purposeful Journey */}
+      <section className="mx-auto w-full max-w-6xl px-6 pb-16">
+        <div className="relative min-h-[430px] overflow-hidden rounded-3xl bg-neutral-50 sm:min-h-[480px] lg:min-h-[520px]">
+          {/* Large background circles */}
+          <div className="absolute -left-20 -top-24 h-52 w-52 rounded-full bg-[#80DEEA] sm:h-64 sm:w-64 lg:h-72 lg:w-72" />
+
+          <div className="absolute -right-20 top-16 h-48 w-48 rounded-full bg-[#13ABBF] sm:h-56 sm:w-56 lg:h-64 lg:w-64" />
+
+          <div className="absolute -bottom-28 -right-20 h-60 w-60 rounded-full bg-[#A2337E] sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
+
+          {/* Smaller scattered dots */}
+          <div className="absolute left-[7%] top-[34%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
+
+          <div className="absolute left-[13%] top-[53%] h-9 w-9 rounded-full bg-[#021214] sm:h-12 sm:w-12" />
+
+          <div className="absolute left-[31%] bottom-[22%] h-7 w-7 rounded-full bg-[#13ABBF] sm:h-10 sm:w-10" />
+
+          <div className="absolute left-[46%] bottom-[17%] h-4 w-4 rounded-full bg-[#13ABBF] sm:h-6 sm:w-6" />
+
+          <div className="absolute right-[17%] top-[15%] h-3 w-3 rounded-full bg-[#021214] sm:h-4 sm:w-4" />
+
+          <div className="absolute right-[12%] top-[46%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
+
+          <div className="absolute right-[25%] bottom-[25%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
+
+          {/* Dotted journey path */}
+          <svg
+            viewBox="0 0 1200 520"
+            preserveAspectRatio="none"
+            className="pointer-events-none absolute inset-0 h-full w-full"
+            aria-hidden="true"
+          >
+            <path
+              d="M 70 195
+           C 220 245, 270 330, 445 335
+           C 610 340, 675 420, 790 425
+           C 925 430, 1000 320, 1110 255"
+              fill="none"
+              stroke="#80DEEA"
+              strokeWidth="6"
+              strokeLinecap="round"
+              strokeDasharray="1 18"
+            />
+          </svg>
+
+          {/* Main message */}
+          <div className="relative z-10 mx-auto flex min-h-[430px] max-w-4xl items-center justify-center px-8 pb-28 pt-20 text-center sm:min-h-[480px] sm:px-12 sm:pb-32 lg:min-h-[520px] lg:px-16">
+            <h2
+              className={`${jost.className} max-w-3xl text-3xl font-bold leading-[1.18] text-[#021214] sm:text-4xl lg:text-5xl`}
+            >
+              To travel purposefully toward an unknown destination.
+            </h2>
+          </div>
+
+          {/* Scooter */}
+          <Image
+            src="/images/coddiwomple/scooter.png"
+            alt="Coddiwomple Art scooter mascot"
+            width={800}
+            height={800}
+            className="absolute bottom-5 right-[17%] z-20 h-auto w-28 object-contain sm:w-36 lg:bottom-7 lg:w-44"
+          />
+        </div>
       </section>
 
       {/* About the Project */}
@@ -145,19 +205,17 @@ export default function CoddiwompleArtPage() {
         </div>
 
         {/* Wordmark */}
-<div className="mx-auto mt-20 max-w-5xl">
-  <h3 className="text-2xl font-normal text-neutral-700">
-    Wordmark
-  </h3>
+        <div className="mx-auto mt-20 max-w-5xl">
+          <h3 className="text-2xl font-normal text-neutral-700">Wordmark</h3>
 
-  <Image
-    src="/images/coddiwomple/coddiwomple-wordmark.png"
-    alt="Coddiwomple Art wordmark"
-    width={1600}
-    height={700}
-    className="h-auto w-full object-contain"
-  />
-</div>
+          <Image
+            src="/images/coddiwomple/coddiwomple-wordmark.png"
+            alt="Coddiwomple Art wordmark"
+            width={1600}
+            height={700}
+            className="h-auto w-full object-contain"
+          />
+        </div>
 
         {/* Scooter Mascot */}
         <div className="mx-auto mt-20 max-w-5xl">
@@ -176,6 +234,7 @@ export default function CoddiwompleArtPage() {
           </div>
         </div>
       </section>
+
       {/* Print & Promotional Assets */}
       <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
         <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
@@ -225,38 +284,102 @@ export default function CoddiwompleArtPage() {
           </div>
         </div>
       </section>
+
       {/* Website & UX */}
-      <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
-        <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
-          <div className="h-px flex-1 bg-neutral-300" />
+<section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+  {/* Section heading */}
+  <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
+    <div className="h-px flex-1 bg-neutral-300" />
 
-          <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
-            Website & UX
-          </h2>
+    <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
+      Website & UX
+    </h2>
 
-          <div className="h-px flex-1 bg-neutral-300" />
-        </div>
+    <div className="h-px flex-1 bg-neutral-300" />
+  </div>
 
-        <div className="mx-auto max-w-4xl">
-          <p className="text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
-            The website was designed to keep the experience simple for parents:
-            understand the course, see what children will learn, and move
-            naturally toward enrollment. The interface stays intentionally clean
-            so the artwork, class information, and calls to action remain easy
-            to find.
+  {/* UX story */}
+  <div className="mx-auto max-w-4xl">
+    <p className="text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
+      One of the clearest UX decisions came from the course call-to-action. I
+      started with a conventional button, but it felt too much like a generic
+      software interface for a brand built around creativity, exploration, and
+      discovery.
+    </p>
+
+    <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
+      I replaced the button with a stronger berry-colored text link and used
+      motion as the visual cue instead. The interaction evolved into a wandering
+      dot following a curved path beneath “Explore the courses →,” creating a
+      more distinctive invitation to move deeper into the site.
+    </p>
+  </div>
+
+  {/* Live interaction example */}
+  <div className="mx-auto mt-12 max-w-5xl">
+    <div className="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-2xl bg-white px-6 py-14 shadow-[0_2px_12px_rgba(0,0,0,0.08)] sm:min-h-[360px] sm:px-10">
+      <div className="w-full max-w-2xl">
+        {/* CTA */}
+        <div className="flex items-center justify-center gap-3 sm:gap-4">
+          <p
+            className={`${jost.className} text-2xl font-bold text-[#A2337E] sm:text-3xl lg:text-4xl`}
+          >
+            Explore the courses
           </p>
+
+          <span
+            className={`${jost.className} text-2xl font-normal text-[#A2337E] sm:text-3xl lg:text-4xl`}
+            aria-hidden="true"
+          >
+            →
+          </span>
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="aspect-[4/3] rounded-2xl bg-neutral-100" />
-          <div className="aspect-[4/3] rounded-2xl bg-neutral-100" />
-        </div>
+        {/* Animated journey */}
+        <div className="mx-auto mt-5 w-full max-w-md sm:mt-7">
+          <svg
+            viewBox="0 0 500 105"
+            className="h-auto w-full overflow-visible"
+            role="img"
+            aria-label="Animated berry-colored dot moving along a curved path beneath the course link"
+          >
+            {/* Invisible motion path */}
+            <path
+              id="course-dot-path"
+              d="M 80 32
+                 C 135 32, 155 73, 215 73
+                 C 285 73, 305 40, 365 40
+                 C 395 40, 415 54, 430 61"
+              fill="none"
+              stroke="none"
+            />
 
-        <div className="mx-auto mt-8 max-w-5xl">
-          <div className="aspect-[16/9] rounded-2xl bg-neutral-100" />
+            {/* Animated berry dot */}
+            <circle r="11" fill="#A2337E">
+              <animateMotion
+                dur="5s"
+                repeatCount="indefinite"
+                keyPoints="0;1;0"
+                keyTimes="0;0.5;1"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1;0.4 0 0.2 1"
+              >
+                <mpath href="#course-dot-path" />
+              </animateMotion>
+            </circle>
+          </svg>
         </div>
-      </section>
+      </div>
+    </div>
 
+    {/* Feature caption */}
+    <p className="mt-5 max-w-3xl text-sm leading-relaxed text-neutral-500 sm:text-base">
+      The final interaction uses restrained motion to attract attention without
+      overpowering the content, reinforcing the brand’s idea of purposeful
+      exploration.
+    </p>
+  </div>
+</section>
       {/* Reflection */}
       <section className="mx-auto w-full max-w-4xl px-6 py-20 sm:py-24">
         <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-neutral-400">
