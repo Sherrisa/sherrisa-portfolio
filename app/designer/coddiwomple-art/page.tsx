@@ -41,17 +41,11 @@ export default function CoddiwompleArtPage() {
 
           {/* Smaller scattered dots */}
           <div className="absolute left-[7%] top-[34%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
-
           <div className="absolute left-[13%] top-[53%] h-9 w-9 rounded-full bg-[#021214] sm:h-12 sm:w-12" />
-
           <div className="absolute left-[31%] bottom-[22%] h-7 w-7 rounded-full bg-[#13ABBF] sm:h-10 sm:w-10" />
-
           <div className="absolute left-[46%] bottom-[17%] h-4 w-4 rounded-full bg-[#13ABBF] sm:h-6 sm:w-6" />
-
           <div className="absolute right-[17%] top-[15%] h-3 w-3 rounded-full bg-[#021214] sm:h-4 sm:w-4" />
-
           <div className="absolute right-[12%] top-[46%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
-
           <div className="absolute right-[25%] bottom-[25%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
 
           {/* Dotted journey path */}
@@ -74,15 +68,31 @@ export default function CoddiwompleArtPage() {
             />
           </svg>
 
-          {/* Main message */}
-          <div className="relative z-10 mx-auto flex min-h-[430px] max-w-4xl items-center justify-center px-8 pb-28 pt-20 text-center sm:min-h-[480px] sm:px-12 sm:pb-32 lg:min-h-[520px] lg:px-16">
-            <h2
-              className={`${jost.className} max-w-3xl text-3xl font-bold leading-[1.18] text-[#021214] sm:text-4xl lg:text-5xl`}
-            >
-              To travel purposefully toward an unknown destination.
-            </h2>
-          </div>
+          {/* Definition */}
+<div className="relative z-10 mx-auto flex min-h-[430px] max-w-5xl items-center px-8 pb-28 pt-16 sm:min-h-[480px] sm:px-12 lg:min-h-[520px] lg:px-16">
+  <div className="w-full">
+    <div className="mb-6 ml-10 text-left sm:mb-8 sm:ml-16 lg:ml-24">
+      <p
+        className={`${jost.className} text-sm font-bold uppercase tracking-[0.14em] text-[#021214] sm:text-base`}
+      >
+        Coddiwomple
+      </p>
 
+      <p
+        className={`${jost.className} mt-2 text-lg text-[#021214] sm:text-xl`}
+        style={{ fontStyle: "italic" }}
+      >
+        verb
+      </p>
+    </div>
+
+    <h2
+      className={`${jost.className} max-w-4xl text-left text-3xl font-bold leading-[1.08] text-[#021214] sm:text-4xl lg:text-5xl`}
+    >
+      To travel purposefully toward an unknown destination.
+    </h2>
+  </div>
+</div>
           {/* Scooter */}
           <Image
             src="/images/coddiwomple/scooter.png"

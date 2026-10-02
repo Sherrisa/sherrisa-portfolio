@@ -87,7 +87,7 @@ export default function ChoisiCopenhagenPage() {
           {/* Pair 1 */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <Image
-              src="/images/choisi/2026-09-23_Copenhagen-64.jpg"
+              src="/images/choisi/2026-09-23_Copenhagen-70.jpg"
               alt="Choisi Copenhagen"
               width={1920}
               height={2400}
@@ -95,7 +95,7 @@ export default function ChoisiCopenhagenPage() {
             />
 
             <Image
-              src="/images/choisi/2026-09-23_Copenhagen-70.jpg"
+              src="/images/choisi/2026-09-23_Copenhagen-64.jpg"
               alt="Choisi Copenhagen"
               width={1920}
               height={2400}
@@ -106,7 +106,7 @@ export default function ChoisiCopenhagenPage() {
           {/* Pair 2 */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <Image
-              src="/images/choisi/2026-09-23_Copenhagen-77.jpg"
+              src="/images/choisi/2026-09-23_Copenhagen-80.jpg"
               alt="Choisi Copenhagen"
               width={1920}
               height={2400}
@@ -114,7 +114,7 @@ export default function ChoisiCopenhagenPage() {
             />
 
             <Image
-              src="/images/choisi/2026-09-23_Copenhagen-80.jpg"
+              src="/images/choisi/2026-09-23_Copenhagen-86.jpg"
               alt="Choisi Copenhagen"
               width={1920}
               height={2400}
@@ -125,7 +125,7 @@ export default function ChoisiCopenhagenPage() {
           {/* Solo feature */}
           <div className="mx-auto w-full max-w-2xl">
             <Image
-              src="/images/choisi/2026-09-23_Copenhagen-86.jpg"
+              src="/images/choisi/2026-09-23_Copenhagen-77.jpg"
               alt="Choisi Copenhagen"
               width={1920}
               height={2400}

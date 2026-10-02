@@ -4,8 +4,20 @@ import { urbanist } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sherrisa",
-  description: "Educator, designer, and photographer.",
+  title: "Sherrisa Classon",
+  description: "Educator | Designer | Photographer",
+  openGraph: {
+    title: "Sherrisa Classon",
+    description: "Educator | Designer | Photographer",
+    images: [
+      {
+        url: "/images/wildflowers.jpeg",
+        width: 1200,
+        height: 800,
+        alt: "Watercolor wildflowers",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
