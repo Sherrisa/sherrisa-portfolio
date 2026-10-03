@@ -30,79 +30,64 @@ export default function CoddiwompleArtPage() {
       </section>
 
       {/* Hero — Purposeful Journey */}
-      <section className="mx-auto w-full max-w-6xl px-6 pb-16">
-        <div className="relative min-h-[430px] overflow-hidden rounded-3xl bg-neutral-50 sm:min-h-[480px] lg:min-h-[520px]">
-          {/* Large background circles */}
-          <div className="absolute -left-20 -top-24 h-52 w-52 rounded-full bg-[#80DEEA] sm:h-64 sm:w-64 lg:h-72 lg:w-72" />
-
-          <div className="absolute -right-20 top-16 h-48 w-48 rounded-full bg-[#13ABBF] sm:h-56 sm:w-56 lg:h-64 lg:w-64" />
-
-          <div className="absolute -bottom-28 -right-20 h-60 w-60 rounded-full bg-[#A2337E] sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
-
-          {/* Smaller scattered dots */}
-          <div className="absolute left-[7%] top-[34%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
-          <div className="absolute left-[13%] top-[53%] h-9 w-9 rounded-full bg-[#021214] sm:h-12 sm:w-12" />
-          <div className="absolute left-[31%] bottom-[22%] h-7 w-7 rounded-full bg-[#13ABBF] sm:h-10 sm:w-10" />
-          <div className="absolute left-[46%] bottom-[17%] h-4 w-4 rounded-full bg-[#13ABBF] sm:h-6 sm:w-6" />
-          <div className="absolute right-[17%] top-[15%] h-3 w-3 rounded-full bg-[#021214] sm:h-4 sm:w-4" />
-          <div className="absolute right-[12%] top-[46%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
-          <div className="absolute right-[25%] bottom-[25%] h-5 w-5 rounded-full bg-[#A2337E] sm:h-7 sm:w-7" />
-
-          {/* Dotted journey path */}
-          <svg
-            viewBox="0 0 1200 520"
-            preserveAspectRatio="none"
-            className="pointer-events-none absolute inset-0 h-full w-full"
-            aria-hidden="true"
-          >
-            <path
-              d="M 70 195
+<section className="mx-auto w-full max-w-6xl px-6 pb-16">
+  <div className="relative min-h-[430px] overflow-hidden rounded-3xl bg-neutral-50 sm:min-h-[480px] lg:min-h-[520px]">
+    {/* Dotted journey path */}
+    <svg
+      viewBox="0 0 1200 520"
+      preserveAspectRatio="none"
+      className="pointer-events-none absolute inset-0 h-full w-full"
+      aria-hidden="true"
+    >
+      <path
+        d="M 70 195
            C 220 245, 270 330, 445 335
            C 610 340, 675 420, 790 425
            C 925 430, 1000 320, 1110 255"
-              fill="none"
-              stroke="#80DEEA"
-              strokeWidth="6"
-              strokeLinecap="round"
-              strokeDasharray="1 18"
-            />
-          </svg>
+        fill="none"
+        stroke="#80DEEA"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeDasharray="1 18"
+      />
+    </svg>
 
-          {/* Definition */}
-<div className="relative z-10 mx-auto flex min-h-[430px] max-w-5xl items-center px-8 pb-28 pt-16 sm:min-h-[480px] sm:px-12 lg:min-h-[520px] lg:px-16">
-  <div className="w-full">
-    <div className="mb-6 ml-10 text-left sm:mb-8 sm:ml-16 lg:ml-24">
-      <p
-        className={`${jost.className} text-sm font-bold uppercase tracking-[0.14em] text-[#021214] sm:text-base`}
-      >
-        Coddiwomple
-      </p>
+    {/* Definition */}
+    <div className="relative z-10 mx-auto flex min-h-[430px] max-w-5xl items-center px-8 pb-28 pt-16 sm:min-h-[480px] sm:px-12 lg:min-h-[520px] lg:px-16">
+      <div className="w-full">
+        <div className="mb-6 ml-10 text-left sm:mb-8 sm:ml-16 lg:ml-24">
+          <p
+            className={`${jost.className} text-sm font-bold uppercase tracking-[0.14em] text-[#021214] sm:text-base`}
+          >
+            Coddiwomple
+          </p>
 
-      <p
-        className={`${jost.className} mt-2 text-lg text-[#021214] sm:text-xl`}
-        style={{ fontStyle: "italic" }}
-      >
-        verb
-      </p>
+          <p
+            className={`${jost.className} mt-2 text-lg text-[#021214] sm:text-xl`}
+            style={{ fontStyle: "italic" }}
+          >
+            verb
+          </p>
+        </div>
+
+        <h2
+          className={`${jost.className} max-w-4xl text-left text-3xl font-bold leading-[1.08] text-[#021214] sm:text-4xl lg:text-5xl`}
+        >
+          To travel purposefully toward an unknown destination.
+        </h2>
+      </div>
     </div>
 
-    <h2
-      className={`${jost.className} max-w-4xl text-left text-3xl font-bold leading-[1.08] text-[#021214] sm:text-4xl lg:text-5xl`}
-    >
-      To travel purposefully toward an unknown destination.
-    </h2>
+    {/* Scooter */}
+    <Image
+      src="/images/coddiwomple/scooter.png"
+      alt="Coddiwomple Art scooter mascot"
+      width={800}
+      height={800}
+      className="absolute bottom-3 right-[10%] z-20 h-auto w-36 object-contain sm:w-44 lg:bottom-5 lg:right-[12%] lg:w-56"
+    />
   </div>
-</div>
-          {/* Scooter */}
-          <Image
-            src="/images/coddiwomple/scooter.png"
-            alt="Coddiwomple Art scooter mascot"
-            width={800}
-            height={800}
-            className="absolute bottom-5 right-[17%] z-20 h-auto w-28 object-contain sm:w-36 lg:bottom-7 lg:w-44"
-          />
-        </div>
-      </section>
+</section>
 
       {/* About the Project */}
       <section className="mx-auto w-full max-w-4xl px-6 py-16 sm:py-20">

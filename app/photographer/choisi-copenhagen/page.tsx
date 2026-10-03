@@ -51,9 +51,9 @@ export default function ChoisiCopenhagenPage() {
 
         <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
           While visiting Copenhagen, I photographed Choisi, a beautifully
-          curated shop filled with ceramics, objects, texture, and warm
-          natural light. The goal was to capture both the products and the
-          feeling of the space.
+          curated shop filled with ceramics, objects, texture, and warm natural
+          light. The goal was to capture both the products and the feeling of
+          the space.
         </p>
       </section>
 
@@ -66,8 +66,8 @@ export default function ChoisiCopenhagenPage() {
         <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
           I focused on composition, available light, material detail, and the
           relationship between individual objects and the environment around
-          them. I wanted the images to feel quiet, tactile, and grounded in
-          the visual character of the shop.
+          them. I wanted the images to feel quiet, tactile, and grounded in the
+          visual character of the shop.
         </p>
       </section>
 
@@ -103,25 +103,6 @@ export default function ChoisiCopenhagenPage() {
             />
           </div>
 
-          {/* Pair 2 */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <Image
-              src="/images/choisi/2026-09-23_Copenhagen-80.jpg"
-              alt="Choisi Copenhagen"
-              width={1920}
-              height={2400}
-              className="h-auto w-full"
-            />
-
-            <Image
-              src="/images/choisi/2026-09-23_Copenhagen-86.jpg"
-              alt="Choisi Copenhagen"
-              width={1920}
-              height={2400}
-              className="h-auto w-full"
-            />
-          </div>
-
           {/* Solo feature */}
           <div className="mx-auto w-full max-w-2xl">
             <Image
@@ -133,7 +114,7 @@ export default function ChoisiCopenhagenPage() {
             />
           </div>
 
-          {/* Pair 3 */}
+          {/* Pair 2 */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <Image
               src="/images/choisi/2026-09-23_Copenhagen-89.jpg"
@@ -152,7 +133,7 @@ export default function ChoisiCopenhagenPage() {
             />
           </div>
 
-          {/* Pair 4 */}
+          {/* Pair 3 */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <Image
               src="/images/choisi/2026-09-23_Copenhagen-93.jpg"
@@ -200,17 +181,17 @@ export default function ChoisiCopenhagenPage() {
 
         <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
           This shoot reminded me how much I enjoy photographing environments
-          where product, space, design, and story overlap. The strongest
-          images came from slowing down and paying attention to relationships
-          between light, form, texture, and placement.
+          where product, space, design, and story overlap. The strongest images
+          came from slowing down and paying attention to relationships between
+          light, form, texture, and placement.
         </p>
 
         <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
           One thing I would approach differently next time is orientation
           coverage. I photographed the session entirely in portrait, even
-          though both portrait and landscape assets would have been useful.
-          It reinforced the importance of building deliverable variety into
-          the shot list before the shoot begins.
+          though both portrait and landscape assets would have been useful. It
+          reinforced the importance of building deliverable variety into the
+          shot list before the shoot begins.
         </p>
       </section>
     </main>
