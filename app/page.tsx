@@ -49,7 +49,7 @@ export default function Home() {
             <div className="aspect-square bg-neutral-100 p-6">
               <div className="relative h-full w-full overflow-hidden rounded-lg bg-white">
                 <Image
-                  src="/images/digital-drawing/dotscircles-square.JPG"
+                  src="/images/digital-drawing/dotscircles-square.jpg"
                   alt="Student painting dots with sponge brushes during Digital Drawing class"
                   fill
                   className="object-cover"
