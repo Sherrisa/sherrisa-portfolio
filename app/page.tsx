@@ -40,19 +40,17 @@ export default function Home() {
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Educator */}
-          {/*
           <Link
-            href="/educator"
+            href="/educator/digital-drawing"
             className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)] transition-transform duration-200 hover:-translate-y-1"
           >
             <div className="aspect-square bg-neutral-100 p-6">
-              <div className="relative h-full w-full overflow-hidden rounded-lg">
+              <div className="relative h-full w-full overflow-hidden rounded-lg bg-white">
                 <Image
-                  src="/images/intro-nextjs.png"
-                  alt="Intro to Next.js instructional design project"
+                  src="/images/digital-drawing/dotscircles-square.JPG"
+                  alt="Student painting dots with sponge brushes during Digital Drawing class"
                   fill
                   className="object-cover"
                 />
@@ -61,15 +59,14 @@ export default function Home() {
 
             <div className="px-6 py-6">
               <h3 className="text-2xl font-normal text-neutral-700">
-                Intro to Next.js
+                Digital Drawing
               </h3>
 
               <p className="mt-1 text-lg text-neutral-500">
-                Instructional Design
+                Curriculum Design & Instruction
               </p>
             </div>
           </Link>
-          */}
 
           {/* Designer */}
           <Link
