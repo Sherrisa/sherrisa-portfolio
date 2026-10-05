@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { oswald } from "../fonts";
 
@@ -20,8 +21,8 @@ export default function EducatorPage() {
         </h1>
 
         <p className="mt-8 max-w-3xl text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
-          I design learning experiences that help people move from curiosity
-          to understanding, and from understanding to confident action.
+          I design learning experiences that help people move from curiosity to
+          understanding, and from understanding to confident action.
         </p>
       </section>
 
@@ -34,9 +35,9 @@ export default function EducatorPage() {
             </h2>
 
             <p className="mt-3 text-base leading-relaxed text-neutral-500">
-              Curriculum, lesson structure, learning objectives, sequencing,
-              and activities designed around what learners need to understand
-              and do.
+              Curriculum, lesson structure, learning objectives, sequencing, and
+              activities designed around what learners need to understand and
+              do.
             </p>
           </div>
 
@@ -63,6 +64,60 @@ export default function EducatorPage() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* Featured Work */}
+      <section className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24">
+        <div className="mb-12 flex items-center gap-5 sm:mb-16 sm:gap-8">
+          <div className="h-px flex-1 bg-neutral-300" />
+
+          <h2 className="text-center text-sm font-semibold uppercase tracking-[0.25em] text-neutral-500 sm:text-base">
+            Featured Work
+          </h2>
+
+          <div className="h-px flex-1 bg-neutral-300" />
+        </div>
+
+        <Link
+          href="/educator/digital-drawing"
+          className="group block overflow-hidden rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.10)]"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="relative min-h-[440px] overflow-hidden bg-neutral-50 lg:min-h-[560px]">
+              <Image
+                src="/images/digital-drawing/dotscircles-web.jpg"
+                alt="Student painting dots with sponges during a Digital Drawing art lesson"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-[1.01]"
+              />
+            </div>
+
+            <div className="flex items-center px-8 py-12 sm:px-12 lg:px-16">
+              <div>
+                <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
+                  Curriculum Design & Instruction
+                </p>
+
+                <h3
+                  className={`${oswald.className} mt-4 text-4xl font-normal text-[#bed95b] sm:text-5xl`}
+                >
+                  Digital Drawing
+                </h3>
+
+                <p className="mt-6 text-lg font-light leading-relaxed text-neutral-600 sm:text-xl">
+                  A five week elementary art course that combines traditional
+                  drawing and physical materials with digital tools introduced
+                  when they expand what students can see, explore, and build.
+                </p>
+
+                <p className="mt-8 text-base font-medium text-neutral-700">
+                  View case study →
+                </p>
+              </div>
+            </div>
+          </div>
+        </Link>
       </section>
 
       {/* Teaching Approach */}
@@ -147,20 +202,6 @@ export default function EducatorPage() {
             </p>
           </div>
         </div>
-      </section>
-
-      {/* What's Next */}
-      <section className="mx-auto w-full max-w-4xl px-6 py-20 sm:py-24">
-        <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-neutral-400">
-          Current Work
-        </h2>
-
-        <p className="mt-6 text-xl font-light leading-relaxed text-neutral-600 sm:text-2xl">
-          I am currently developing new learning experiences that bring
-          together curriculum design, visual communication, technology, and
-          live instruction. A featured educator case study will be added here
-          as that work is documented and refined.
-        </p>
       </section>
     </main>
   );
